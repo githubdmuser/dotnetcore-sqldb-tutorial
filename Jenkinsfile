@@ -16,9 +16,9 @@ node {
     }
     
     // deploy/update app
+    sh "az webapp deployment user set --user-name $gitUser --password $gitPassword"
+    sh "git remote add azure https://$gitUser:$gitPassword@gldotnetsqlapp.scm.azurewebsites.net/gldotnetsqlapp.git"
     sh '''
-      az webapp deployment user set --user-name $gitUser --password $gitPassword
-      git remote add azure https://$gitUser:$gitPassword@gldotnetsqlapp.scm.azurewebsites.net/gldotnetsqlapp.git
       git add .
       git commit -m "added done field"
       git push azure master
