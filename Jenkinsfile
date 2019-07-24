@@ -4,7 +4,7 @@ node {
   }
   
   stage('deploy') {
-    def gitUser="deployUser"
+    def gitUser="glhcdeployUser"
     def gitPassword="deployPass"
     
     // login Azure
