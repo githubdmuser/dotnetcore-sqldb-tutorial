@@ -14,7 +14,7 @@ This is a sample application that you can use to follow along with the tutorial 
 
 ## License
 
-See [LICENSE](LICENSE.md).
+See [LICENSE](LICENSE.md)..
 
 ## Contributing
 
